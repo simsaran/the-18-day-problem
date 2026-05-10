@@ -1,0 +1,44 @@
+Step,Description,Lane,Avg Time (Days),% of Total Cycle,Value-Add?,Failure Flag
+1,Customer files claim online or by phone,Customer,0.3,1.6%,Yes,
+2,Intake team manually logs claim in system,Claims Intake Team,0.5,2.7%,No,Manual data entry — no auto-population
+3,Claim auto-routed to adjuster queue,Claims Intake Team,0.2,1.1%,No,No priority logic — FIFO only
+4,Adjuster manually picks claim from queue,Adjuster,0.8,4.4%,No,Manual queue — no complexity-based routing
+5,Adjuster sends generic document request email,Adjuster,0.2,1.1%,No,Generic email — no claim-type checklist
+6,Customer gathers and submits documents,Customer,4.2,23.0%,No,Longest single wait — customer-controlled
+7,Adjuster reviews documents for completeness,Adjuster,0.5,2.7%,Yes,
+8 (Decision),DECISION — Documents complete? No = loop to Step 5,Adjuster,0.0,0.0%,No,38% rework rate — no completeness checkpoint
+9,Adjuster conducts full claim assessment,Adjuster,2.1,11.5%,Yes,
+10 (Decision),DECISION — Claim value >$10K? Yes = senior review,Adjuster,0.0,0.0%,No,Value-only trigger — no risk-score criteria
+10a,Senior adjuster review and sign-off,Adjuster,2.8,15.3%,No,Value-only trigger — affects ~45% of claims
+11,Approval or denial decision recorded,Adjuster,0.4,2.2%,Yes,
+12,Adjuster manually emails Finance for payment,Adjuster,0.2,1.1%,No,Manual handoff — no system integration
+13,Finance processes payment or denial letter,Finance & Payments,2.0,10.9%,Yes,
+14,Customer receives payment or notification,Customer,0.3,1.6%,Yes,
+,,,,,, 
+SUMMARY,,,,,,
+Total cycle time (days),18.3 days,,,,,
+Industry benchmark,9.0 days,,,,,
+Gap to close,9.3 days,,,,,
+Average days (from 300-record dataset),18.34 days,,,,,
+Median days (from 300-record dataset),18 days,,,,,
+,,,,,, 
+VALUE-ADD ANALYSIS,,,,,,
+Total value-add steps,6 of 14 steps,43%,,,, 
+Total non-value-add steps,8 of 14 steps,57%,,,, 
+Total value-add time,5.6 days,30.6% of cycle,,,, 
+Total non-value-add time,12.7 days,69.4% of cycle,,,, 
+,,,,,, 
+DELAY SOURCE BREAKDOWN (from 300-record dataset),,,,,,
+Delay Category,# Claims,% of Total,Avg Days Lost,Total Days Lost,
+Document Wait,112,37.3%,4.2,470.4,,
+Rework Loop,59,19.7%,3.3,194.7,,
+Payment Processing,49,16.3%,2.0,98.0,,
+Senior Review,41,13.7%,2.8,114.8,,
+Other,39,13.0%,1.4,54.6,,
+TOTAL,300,100%,,932.5,,
+,,,,,, 
+NOTES,,,,,,
+Source,300 synthetic claim records (Jan–Jun 2025),,,,,
+Prepared by,Simran Saran — Process Improvement Analyst,,,,,
+Project,NorthStar Insurance — DMAIC Claims Process,,,,,
+Phase,Measure,,,,,
