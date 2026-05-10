@@ -1,5 +1,5 @@
 # the-18-day-problem
-### NorthStar Insurance — Claims Resolution Process DMAIC Analysis
+### NorthStar Insurance: Claims Resolution Process DMAIC Analysis
 DMAIC process improvement analysis reducing insurance claims resolution time from 18.3 to 9.1 days. Full artifact set: process maps, Pareto analysis, fishbone, 5 Whys, improvement backlog, DMAIC report.
 
 ---
@@ -10,7 +10,7 @@ NorthStar Insurance (fictional) processes 1,400 claims per month across Auto and
 
 No one had ever mapped the process end to end. No root cause analysis had ever been conducted.
 
-I ran a full DMAIC — Define through Control — producing every artifact by hand using web-based tools. The result: a projected reduction from 18.3 days to **9.1 days (50% improvement)** through 5 targeted initiatives requiring zero additional headcount.
+I ran a full DMAIC Define through Control producing every artifact by hand using web-based tools. The result: a projected reduction from 18.3 days to **9.1 days (50% improvement)** through 5 targeted initiatives requiring zero additional headcount.
 
 ---
 
@@ -18,9 +18,9 @@ I ran a full DMAIC — Define through Control — producing every artifact by ha
 
 | # | Root Cause | Delay Source | % of Avoidable Delay |
 |---|-----------|--------------|----------------------|
-| 1 | No claim-type-specific document checklist — customers receive a generic email and don't know what to submit | Document Wait | 50.4% |
+| 1 | No claim-type-specific document checklist customers receive a generic email and don't know what to submit | Document Wait | 50.4% |
 | 2 | No document completeness validation in claims system — 38% of claims loop back for a second request | Rework Loop | 20.9% |
-| 3 | Senior review threshold is value-only ($10K) — 45% of claims reviewed regardless of complexity | Senior Review Bottleneck | 12.3% |
+| 3 | Senior review threshold is value-only ($10K) 45% of claims reviewed regardless of complexity | Senior Review Bottleneck | 12.3% |
 
 **3 root causes account for 83.6% of all avoidable delay.**
 
@@ -47,11 +47,11 @@ I ran a full DMAIC — Define through Control — producing every artifact by ha
 | Define | Project Charter | `/define/project-charter.pdf` |
 | Define | SIPOC Diagram | `/define/sipoc-diagram.png` |
 | Measure | Current State Process Map (14 steps, 4 swim lanes) | `/measure/process-map-current-state.png` |
-| Measure | Claims Dataset — 300 records | `/measure/claims-dataset.csv` |
+| Measure | Claims Dataset 300 records | `/measure/claims-dataset.csv` |
 | Measure | Process Time Summary | `/measure/process-time-summary.csv` |
 | Analyze | Pareto Analysis (Excel workbook + chart) | `/analyze/pareto-analysis.xlsx` |
 | Analyze | Fishbone Diagram (6 cause categories) | `/analyze/fishbone-root-cause.png` |
-| Analyze | 5 Whys Analysis — 3 complete chains | `/analyze/5-whys-analysis.pdf` |
+| Analyze | 5 Whys Analysis 3 complete chains | `/analyze/5-whys-analysis.pdf` |
 | Improve | Future State Process Map (11 steps) | `/improve/process-map-future-state.png` |
 | Improve | Improvement Backlog (12 initiatives, 3 waves) | `/improve/improvement-backlog.xlsx` |
 | Control | Full DMAIC Report | `/control/dmaic-report-northstar.pdf` |
