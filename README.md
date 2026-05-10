@@ -19,7 +19,7 @@ I ran a full DMAIC Define through Control producing every artifact by hand using
 | # | Root Cause | Delay Source | % of Avoidable Delay |
 |---|-----------|--------------|----------------------|
 | 1 | No claim-type-specific document checklist customers receive a generic email and don't know what to submit | Document Wait | 50.4% |
-| 2 | No document completeness validation in claims system — 38% of claims loop back for a second request | Rework Loop | 20.9% |
+| 2 | No document completeness validation in claims system 38% of claims loop back for a second request | Rework Loop | 20.9% |
 | 3 | Senior review threshold is value-only ($10K) 45% of claims reviewed regardless of complexity | Senior Review Bottleneck | 12.3% |
 
 **3 root causes account for 83.6% of all avoidable delay.**
